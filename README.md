@@ -33,14 +33,20 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+  The difference between and adaptive website and a fully responsive website is that an adaptive website is built on specific breakpoints and on a responsive website, it is fluid and will adapt to the a user's device no matter what the screen size is. 
 
 2. Describe what it means to be mobile first vs desktop first.
+  Mobile first means designing and coding for mobile devices first and then designing and coding as you gain more screen to desktop. Desktop first would be the complete opposite meaning you would design and code for screen space for desktop and working your way to design and code for decreased screen space.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+  It allows us to convert rem units by the power of 10 for our font-size throughout the document, so 1rem would be 10px.
+
 
 4. How would you describe preprocessing to someone new to CSS?
+  With pre-processing we are introduced another syntax for css. It provides developer tools that make creating layouts much easier and less time consuming for a developer vs using vanilla css. Pre-processing takes syntax such as LESS and compiles it into your css file. 
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+  My favorite concept of pre-processing is being able to import variables and mixins to create a more efficient way of designing and coding. I get the most trouble when nesting, something I find when I see there is so much content being nested, it gets a bit overwhelming and more difficult for me DRY in code.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
