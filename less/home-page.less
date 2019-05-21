@@ -1,6 +1,21 @@
 // Home Content
 
 .home {
+  .header-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    h1 {
+      font-size: 3.5rem;
+      margin: 10px 0;
+    }
+
+    img {
+      border-radius: 7px;
+      width: 100%;
+    }
+  }
 
   .intro {
 
@@ -19,6 +34,26 @@
     flex-wrap: wrap;
     width: 100%;
 
+    .blast {
+      @media @phone {
+        width: 90%;
+        display: block;
+        margin: 20px auto;
+      }
+    }
+
+    .sky {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    .launch {
+      @media @phone {
+        display: none;
+      }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -31,11 +66,12 @@
     padding: 15px;
 
     h3 {
-      margin-top: 11px;
+      margin-top: 10px;
+      .subheader;
     }
 
     p {
-      margin-top: 13px;
+      padding-top: 13px;
     }
   }
 
@@ -43,14 +79,26 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .center;
+
+    @media @phone {
+      margin-top: 0px;
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      padding: 15px;
+    }
 
     .walk-text {
       width: 50%;
 
+      @media @phone {
+        .mobile-align;
+      }
+
       h3 {
         margin-bottom: 10px;
+        .subheader;
       }
 
       p {
@@ -58,18 +106,73 @@
       }
 
       .btn {
+        .custom-button(30%, @btn-bg-color, white);
+        
+        &:hover {
+          background: white;
+          color: @btn-bg-color;
+          border: none;
+          transition: 300ms;
+          cursor: pointer;
+        }
+
+        @media @phone {
+          width: 100%;
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        margin-left: 0;
+        .mobile-align;
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+
       }
     }
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; 
+  }
+  
+  
+  input[type=submit] {
+    background-color: @btn-bg-color;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  input[type=submit]:hover {
+    background-color: @waterloo;
+  }
+  
+  
+  .signup-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
   }
 }// home

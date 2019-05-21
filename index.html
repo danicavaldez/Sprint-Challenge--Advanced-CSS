@@ -3,6 +3,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
   <title>SpaceWalkers</title>
 
@@ -19,6 +21,18 @@
  <!-- navigation code here -->
 
   <div class="container home">
+
+    <div class="header-nav">
+      <h1>SpaceWalkers</h1>
+      <nav>
+        <a href="">Home</a>
+        <a href="">About Us</a>
+        <a href="">Blog</a>
+        <a href="">Contact</a>
+        <a href="">Sign In</a>
+      </nav>
+      <img src="img/main-header.png" alt="Outside Earth's Atmosphere">
+    </div>
 
     <header class="intro">
        <!-- image code here -->
@@ -51,9 +65,7 @@
       
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
       
-        <div class="btn">
-          Sign Up
-        </div>
+        <button class="btn">Sign Up</button>
       </div>
       
       <div class="walk-img">
@@ -61,6 +73,30 @@
       </div>
 
     </section>
+
+    <div class="signup-form">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
 
     <footer>
       <p>Copyright SpaceWalkers 2018</p>
